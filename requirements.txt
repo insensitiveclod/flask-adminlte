@@ -1,0 +1,4 @@
+Flask
+Flask-Admin>=1.5.2
+Flask-Migrate
+Flask-Security>=3.0.0

@@ -30,8 +30,8 @@ class AdminLte(Admin):
 
     def gravatar_image_url(self, email, default_url, size = 96):
         return "https://www.gravatar.com/avatar/" \
-               + hashlib.md5(email.lower()).hexdigest() \
-               + "?" + urllib.urlencode({'d': default_url, 's': str(size)})
+               + hashlib.md5(email.lower().encode('utf-8')).hexdigest() \
+               + "?" + urllib.parse.urlencode({'d': default_url, 's': str(size)})
 
     def set_category_icon(self, name, icon_value, icon_type = "fa"):
         cat_text = as_unicode(name)

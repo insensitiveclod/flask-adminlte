@@ -31,6 +31,16 @@ http://adminlte.najdaapps.com/admin/ \
 ### Usage
 Copy directories `adminlte`, `static`, `templates` to your project.
 
+### Getting the example app 'FlaskCMS' working
+
+Create a virtual environment, install the requirements and start the app
+
+```$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ python3 app.py
+```
+
 #### Basic configuration
 ```python
 from flask import Flask, url_for

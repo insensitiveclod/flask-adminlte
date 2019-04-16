@@ -2,5 +2,5 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-from device import Device
-from message import Message
+from models.device import Device
+from models.message import Message
